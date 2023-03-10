@@ -9,7 +9,7 @@ body {
 
 #header {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0, 0, 0, 0.2)), url(/img-bg-main.jpeg);
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0, 0, 0, 0.2)), url(images/img-bg-main.jpeg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -97,10 +97,12 @@ body {
     margin-top: 10px;
     margin-left: 20px;
     text-align: justify;
-    border-top: 3px inset #5c5c8a;
-    border-left: 3px outset #5c5c8a;
-    padding: 5px;
-    box-shadow: -3px -3px 6px rgba(134, 134, 172,0.8);
+    border-radius: 10px;
+    background-color: #d1d1e0;
+    /* border-top: 3px inset #5c5c8a; */
+    /* border-left: 3px outset #5c5c8a; */
+    padding: 15px;
+    box-shadow: -3px -3px 8px rgba(134, 134, 172,0.8);
 }
     
 
@@ -174,8 +176,8 @@ body {
 .col-md-6_scale_img {
     padding: 0;
     overflow: hidden;
-    border-bottom-right-radius: 70px;
-    border-top-left-radius: 70px;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px;
     border: 4px #6699cc inset;
     box-shadow: 0 12px 10px rgba(134, 134, 172,0.9);
     /* border: 1px solid #000; */
@@ -446,7 +448,7 @@ body {
 
 .contact {
     padding: 50px;
-    background: linear-gradient(rgba(31, 31, 46,0.3),rgba(31, 31, 46, 0.4)), url(/img-bg-cont.jpeg);
+    background: linear-gradient(rgba(31, 31, 46,0.3),rgba(31, 31, 46, 0.4)), url(images/img-bg-cont.jpeg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
