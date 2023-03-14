@@ -89,7 +89,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     margin-left: 40px;
-    /* font-size: 28px; */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -99,8 +98,6 @@ body {
     text-align: justify;
     border-radius: 10px;
     background-color: #d1d1e0;
-    /* border-top: 3px inset #5c5c8a; */
-    /* border-left: 3px outset #5c5c8a; */
     padding: 15px;
     box-shadow: -3px -3px 8px rgba(134, 134, 172,0.8);
 }
@@ -112,7 +109,6 @@ body {
 
 .logo {
     border: 3px outset #cc99ff;
-    /* border: 3px outset #6caed5; */
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 5px 5px 8px rgba(134, 45, 134, 0.6);
@@ -132,8 +128,6 @@ body {
 
 .navbar {
     background: linear-gradient(to right,rgba(92, 92, 138, 0.8), rgba(41, 41, 61, 1));
-    /* background: linear-gradient(to right,rgba(35, 71, 144, 0.7), rgba(34, 0, 102, 0.9)); */
-    
 }
 
 .navbar-brand img {
@@ -173,21 +167,21 @@ body {
     /* text-shadow:3px -3px 3px rgba(193, 255, 255, 0.5); */
 }
 
-.col-md-6_scale_img {
+.col-md-6-box{
+    margin: 8% 5%;
     padding: 0;
     overflow: hidden;
-    border-bottom-right-radius: 100px;
-    border-top-left-radius: 100px;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px;
     border: 4px #6699cc inset;
     box-shadow: 0 12px 10px rgba(134, 134, 172,0.9);
-    /* border: 1px solid #000; */
 }
 
 .profile-img {
     width: 100%;
     height: 100%;
-    /* transform: translateY(5%); */
     transition: 0.3s all ease-in-out;
+    filter: grayscale(100%);
 }
 
 .profile-img:hover {
@@ -197,6 +191,7 @@ body {
         -webkit-transform: scale(1.3);
         -o-transform: scale(1.3);
         transform: scale(1.3);
+        filter: grayscale(0);
 }
 
 /* --------------------CV/Resume------------------------- */
