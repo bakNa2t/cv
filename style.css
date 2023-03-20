@@ -80,7 +80,7 @@ body {
 /* -----------------About----------------------- */
 
 .about {
-    padding: 100px;
+    padding: 100px 0;
     margin-bottom: -130px;
     background-color: #e0ebeb;
 }
@@ -171,8 +171,8 @@ body {
     margin: 7% 0%;
     padding: 0;
     overflow: hidden;
-    border-bottom-right-radius: 80px;
-    border-top-left-radius: 80px;
+    border-bottom-right-radius: 7vw;
+    border-top-left-radius: 7vw;
     border: 4px #6699cc inset;
     box-shadow: 0 12px 10px rgba(134, 134, 172,0.9);
 }
@@ -559,4 +559,13 @@ body {
 .social-icons ul a li .fa {
     color: lightgray;
     font-size: 16px;
+}
+
+@media (max-width: 500px){
+   .img-job, .img-edu{
+    display: none;
+   }
+   .col-md-6-box{
+
+   }
 }
