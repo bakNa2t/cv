@@ -26,7 +26,6 @@ body {
     border-radius: 50%;
     width: 275px;
     border: 4px outset rgba(128, 191, 255, 0.7);
-    /* border: 4px outset rgba(204, 153, 255, 0.7); */
 }   
 
 .user-box h1 {
@@ -35,7 +34,6 @@ body {
     font-weight: bold;
     margin: 10px;
     -webkit-text-stroke: 1px rgba(51, 51, 77, 1);
-    /* -webkit-text-stroke: 2px rgba(115, 38, 77, 0.8); */
 }
 
 .user-box p {
@@ -76,6 +74,10 @@ body {
     0%{transform: translateY(0);}
     100%{transform: translateY(10px);}
 }
+
+@media (max-width: 500px){
+    
+ }
 
 /* -----------------About----------------------- */
 
@@ -185,13 +187,12 @@ body {
 }
 
 .profile-img:hover {
-    /* transform: scale(1.1); */
-    -ms-transform: scale(1.3);
-        -moz-transform: scale(1.3);
-        -webkit-transform: scale(1.3);
-        -o-transform: scale(1.3);
-        transform: scale(1.3);
-        filter: grayscale(0);
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(0);
 }
 
 /* --------------------CV/Resume------------------------- */
@@ -271,37 +272,54 @@ body {
     color: #000;
 }
 
-.img-job {
-    margin-top: 60px;
-    margin-left: 35px;
-}
-
-.img-between {
-    margin-top: 65px;
-}
-
-.img-edu {
-    margin-top: 150px;
-    margin-left: 20px;
-}
-
-.img-frame { 
-    width: 500px;
-    height: 330px;
+.col-md-6-box-job{
+    margin: 11% 5%;
+    padding: 0;
+    overflow: hidden;
+    border-bottom-right-radius: 7vw;
+    border-top-left-radius: 7vw;
     border: 4px #666699 inset;
-    box-shadow: 0 10px 10px rgba(134, 134, 172,0.8);
-    border-top-left-radius: 6vw;
-    border-bottom-right-radius: 6vw;
+    box-shadow: 0 12px 10px rgba(134, 134, 172,0.9);
 }
 
-.img-job:hover, .img-edu:hover {
-    border-top-right-radius: 6vw;
-    border-bottom-left-radius: 6vw;
+.img-job {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+    filter: grayscale(100%);
+}
+
+.col-md-6-box-edu {
+    margin: 20% 5%;
+    padding: 0;
+    overflow: hidden;
+    border-bottom-right-radius: 7vw;
+    border-top-left-radius: 7vw;
+    border: 4px #666699 inset;
+    box-shadow: 0 12px 10px rgba(134, 134, 172,0.9);
+}
+
+.col-md-6-box-edu:hover, .col-md-6-box-job:hover{
+    border-top-right-radius: 7vw;
+    border-bottom-left-radius: 7vw;
     border-top-left-radius: 0;
     border-bottom-right-radius: 0;
-    transition:0.5s;
+    transition:0.6s;
 }
 
+.img-edu{
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+    filter: grayscale(100%);
+}
+
+.img-edu:hover, .img-job:hover {
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
 
 /* ------------------Skills-------------------------- */
 
@@ -331,19 +349,19 @@ body {
     font-size: 20px;
 }
 
-.services-box .dev-list .fa-link{
-    font-size: 14px;
+.services-box .dev-list .fa-square-arrow-up-right{
+    font-size: 20px;
     margin-left: 0px;
 }
 
 .services-box span {
     margin: 3px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 
 .services-box p {
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 20px;
     color: #3d3d5c ;
 }
@@ -401,12 +419,9 @@ body {
 }
 
 .skills-bar {
-    width: 70%;
-    /* height: 250px; */
+    width: 80%;
     margin: 0 auto;
     margin-top: 20px;
-    margin-bottom: 20px;
-
 }
 
 .skills-bar p {
@@ -435,6 +450,53 @@ body {
 
 .progress-bar:hover {
     background: coral !important;
+}
+
+@media (max-width: 914px) {
+    .services-box {
+        font-size: 14px;
+    }
+    .services-box span {
+        font-size: 12px;
+    }
+    .services-box ul li {
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    .services-box ul li .fa {
+        font-size: 16px;
+    }
+    .dev-list {
+        margin-left: 0px;
+    }
+    .skills-bar {
+        margin: 0 5%;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 430px) {
+    .user-box h1{
+        font-size: 36px;
+        -webkit-text-stroke: unset;
+       }
+    .dev-list {
+        margin-left: 50px;
+    }
+    .services-box span {
+        font-size: 16px;
+    }
+    .services-box ul li {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+    .services-box ul li .fa {
+        font-size: 20px;
+    }
+    .skills-bar {
+        margin: 0 10%;
+        margin-top: 20px;
+    }
 }
 
 /* -----------------------Contact---------------------------- */
@@ -563,14 +625,8 @@ body {
    /* .img-job, .img-edu{
     display: none;
    } */
-   .img-frame{
-    width: 300px;
-    height: 180px;
-   }
-   .img-edu{
-    margin-top: 65px;
-    margin-left: 35px;
-   }
+  
+  
    .user-box h1{
     font-size: 36px;
    }
