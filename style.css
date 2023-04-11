@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    /* box-sizing: border-box; */
 }
 
 /* -------Header CSS------------- */
@@ -33,7 +32,7 @@ body {
     font-size: 45px;
     font-weight: bold;
     margin: 10px;
-    -webkit-text-stroke: 1px rgba(51, 51, 77, 1);
+    -webkit-text-stroke: 1px rgba(51, 51, 77, 0.8);
 }
 
 .user-box p {
@@ -76,7 +75,10 @@ body {
 }
 
 @media (max-width: 500px){
-    
+    .user-box h1{
+        font-size: 36px;
+        -webkit-text-stroke: 0.5px rgba(51, 51, 77, 0.4);
+    }
  }
 
 /* -----------------About----------------------- */
@@ -166,7 +168,6 @@ body {
     text-decoration: underline;
     transform: translateY(-4px);
     text-shadow:3px -3px 6px rgba(255, 255, 255, 0.5);
-    /* text-shadow:3px -3px 3px rgba(193, 255, 255, 0.5); */
 }
 
 .col-md-6-box{
@@ -235,7 +236,6 @@ body {
     margin-bottom: 20px;
     margin-left: 20px;
     background: #e1eaea;
-    /* background: #fff; */
 }
 
 .timeline li h4 {
@@ -244,7 +244,6 @@ body {
     padding: 5px 0 5px 20px;
     color: #fff;
     font-size: 15px;
-
 }
 
 .timeline li h4 span {
@@ -270,6 +269,14 @@ body {
     background-color: #b3ccff;
     border-radius: 4px;
     color: #000;
+}
+
+.timeline li p {
+    margin-bottom: 0;
+}
+
+.timeline_content {
+    margin-left: 1.5rem;
 }
 
 .col-md-6-box-job{
@@ -298,7 +305,8 @@ body {
     box-shadow: 0 12px 10px rgba(134, 134, 172,0.9);
 }
 
-.col-md-6-box-edu:hover, .col-md-6-box-job:hover{
+.col-md-6-box-edu:hover,
+.col-md-6-box-job:hover{
     border-top-right-radius: 7vw;
     border-bottom-left-radius: 7vw;
     border-top-left-radius: 0;
@@ -312,7 +320,8 @@ body {
     filter: grayscale(100%);
 }
 
-.img-edu:hover, .img-job:hover {
+.img-edu:hover,
+.img-job:hover {
     -ms-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -619,15 +628,4 @@ body {
 .social-icons ul a li .fa {
     color: lightgray;
     font-size: 16px;
-}
-
-@media (max-width: 500px){
-   /* .img-job, .img-edu{
-    display: none;
-   } */
-  
-  
-   .user-box h1{
-    font-size: 36px;
-   }
 }
