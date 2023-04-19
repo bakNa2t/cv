@@ -28,16 +28,32 @@ body {
 }   
 
 .user-box h1 {
-    color: #fff;
-    font-size: 45px;
+    color: #e0ebeb;
+    font-size: 50px;
     font-weight: bold;
-    margin: 10px;
-    -webkit-text-stroke: 1px rgba(51, 51, 77, 0.8);
+    -webkit-text-stroke: 0.4px rgba(51, 255, 153, 0.5);    
 }
 
 .user-box p {
-    font-size: 15px;
-    color: #fff;
+    font-size: 25px;
+    color: transparent;
+    font-weight: bold;
+    /* -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.9); */
+    background-image: linear-gradient(#ccffcc, #ccffcc);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -300px 0;
+    animation: bcolor 3s linear infinite alternate;
+    margin-top: 10px;
+}
+
+@keyframes bcolor {
+    100% {
+        background-position: 0px 0;
+    }
+    0% {
+        background-position: -350px 0;
+    }
 }
 
 .click-btn {
@@ -332,19 +348,19 @@ body {
 
 /* ------------------Skills-------------------------- */
 
-.services {
+.skills {
     padding-top: 50px;
     padding-bottom: 50px;
     background-color:#e1eaea;
 }
 
-.services h3 {
+.skills h3 {
     font-family: 'Roboto';
     font-weight: 600;
     margin-bottom: 5px;
 }
 
-.services-box {
+.skills-box {
     background: #d1d1e0;
     padding: 10px;
     margin-top: 20px;
@@ -353,29 +369,29 @@ body {
     border-bottom-left-radius: 50px;
 }
 
-.services-box .fa {
+.skills-box .fa {
     margin: 0 15px;
     font-size: 20px;
 }
 
-.services-box .dev-list .fa-square-arrow-up-right{
+.skills-box .dev-list .fa-square-arrow-up-right{
     font-size: 20px;
     margin-left: 0px;
 }
 
-.services-box span {
+.skills-box span {
     margin: 3px;
     font-size: 16px;
     font-weight: bold;
 }
 
-.services-box p {
+.skills-box p {
     font-size: 14px;
     margin-top: 20px;
     color: #3d3d5c ;
 }
 
-.services-box ul {
+.skills-box ul {
     padding: 0;
     width: 90%;
     margin: 0 auto;
@@ -383,12 +399,12 @@ body {
     margin-top: 20px;
 }
 
-.services-box ul li:hover {
+.skills-box ul li:hover {
     text-decoration: underline;
     color: #ffaa80;
 }
 
-.services-box ul li {
+.skills-box ul li {
     margin-bottom: 6px;
 }
 
@@ -406,7 +422,7 @@ body {
     font-weight: 600;    
 }
 
-.services-box:hover {
+.skills-box:hover {
     background: #5c5c8a;
     color: #fff;
     border-top-right-radius: 0;
@@ -416,7 +432,7 @@ body {
     transition: 1s;
 }
 
-.services-box:hover p {
+.skills-box:hover p {
     color: #fff;
 }
 
@@ -462,17 +478,17 @@ body {
 }
 
 @media (max-width: 914px) {
-    .services-box {
+    .skills-box {
         font-size: 14px;
     }
-    .services-box span {
+    .skills-box span {
         font-size: 12px;
     }
-    .services-box ul li {
+    .skills-box ul li {
         font-size: 12px;
         margin-bottom: 0px;
     }
-    .services-box ul li .fa {
+    .skills-box ul li .fa {
         font-size: 16px;
     }
     .dev-list {
@@ -492,14 +508,14 @@ body {
     .dev-list {
         margin-left: 50px;
     }
-    .services-box span {
+    .skills-box span {
         font-size: 16px;
     }
-    .services-box ul li {
+    .skills-box ul li {
         font-size: 14px;
         margin-bottom: 4px;
     }
-    .services-box ul li .fa {
+    .skills-box ul li .fa {
         font-size: 20px;
     }
     .skills-bar {
