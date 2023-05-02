@@ -38,7 +38,6 @@ body {
     font-size: 25px;
     color: transparent;
     font-weight: bold;
-    /* -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.9); */
     background-image: linear-gradient(#ccffcc, #ccffcc);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
