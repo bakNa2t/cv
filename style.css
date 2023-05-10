@@ -174,6 +174,7 @@ body {
 }
 
 .nav-link {
+    text-align: center;
     font-weight: 600;
     font-family: 'Roboto';
     margin-right: 5px;
@@ -205,7 +206,7 @@ body {
 .profile-img {
     width: 100%;
     height: 100%;
-    transition: 0.3s all ease-in-out;
+    transition: 0.5s all ease-in-out;
     filter: grayscale(100%);
 }
 
@@ -308,7 +309,7 @@ body {
     border-bottom-right-radius: 7vw;
     border-top-left-radius: 7vw;
     border: 4px #666699 inset;
-    box-shadow: 0 12px 10px rgba(134, 134, 172,0.9);
+    box-shadow: 0 12px 10px rgba(134, 134, 172,0.6);
 }
 
 .img-job {
@@ -324,11 +325,12 @@ body {
     border-bottom-right-radius: 7vw;
     border-top-left-radius: 7vw;
     border: 4px #666699 inset;
-    box-shadow: 0 12px 10px rgba(134, 134, 172,0.9);
+    box-shadow: 0 12px 10px rgba(134, 134, 172,0.6);
 }
 
 .col-md-6-box-edu:hover,
 .col-md-6-box-job:hover{
+    box-shadow: 0 12px 10px rgba(134, 134, 172,0.95);
     border-top-right-radius: 7vw;
     border-bottom-left-radius: 7vw;
     border-top-left-radius: 0;
@@ -438,15 +440,21 @@ body {
     transition: 1s;
 }
 
-.skills-box:hover p {
+.skills-box p:hover {
     color: #fff;
+}
+
+.skills-box p a:hover {
+    color: #fff;
+    text-shadow: 3px 3px 4px rgba(251,79,20,0.9);
+    transition: 0.5s;
 }
 
 .dev-list_link:hover {
     text-decoration: none;
     color: #fff;
-    text-shadow: 3px -3px 6px rgba(111, 220, 220,0.8);
-    /* text-shadow: 4px -4px 6px rgba(242, 204, 255,0.8) */
+    text-shadow: 3px 3px 6px rgba(251,79,20,0.8);
+    transition: 0.5s;
 }
 
 .skills-bar {
@@ -459,6 +467,11 @@ body {
     margin-top: 2px;
     margin-bottom: 2px;
     font-weight: 600;
+    color: coral;
+}
+
+.skills-bar p a {
+    text-decoration: none;
     color: coral;
 }
 
