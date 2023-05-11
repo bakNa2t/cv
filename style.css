@@ -89,6 +89,26 @@ body {
     100%{transform: translateY(10px);}
 }
 
+/* @media (max-width: 844px){
+    .user-box img {
+        width: 200px;
+    } 
+    .user-box h1{
+        font-size: 30px;
+    }
+    .user-box p {
+        font-size: 18px;
+    }
+    .scroll-btn {
+        padding: 5px 5px 10px;
+        border-radius: 10px;
+        bottom: 10px;
+    }
+    .click-btn {
+        display: none;
+    }
+ } */
+
 @media (max-width: 500px){
     .user-box h1{
         font-size: 36px;
@@ -377,12 +397,24 @@ body {
     border-bottom-left-radius: 50px;
 }
 
+.skills-box:hover {
+    background: #5c5c8a;
+    color: #fff;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 1s;
+}
+
 .skills-box .fa {
     margin: 0 15px;
     font-size: 20px;
 }
 
-.skills-box .dev-list .fa-square-arrow-up-right{
+.skills-box
+.dev-list
+.fa-square-arrow-up-right{
     font-size: 20px;
     margin-left: 0px;
 }
@@ -396,7 +428,11 @@ body {
 .skills-box p {
     font-size: 14px;
     margin-top: 20px;
-    color: #3d3d5c ;
+    color: #3d3d5c;
+}
+
+.skills-box p:hover {
+    color: #fff;
 }
 
 .skills-box ul {
@@ -407,13 +443,13 @@ body {
     margin-top: 20px;
 }
 
+.skills-box ul li {
+    margin-bottom: 6px;
+}
+
 .skills-box ul li:hover {
     text-decoration: underline;
     color: #ffaa80;
-}
-
-.skills-box ul li {
-    margin-bottom: 6px;
 }
 
 .dev-list {
@@ -427,32 +463,15 @@ body {
     display: inline-block;
     text-decoration: none;
     color: coral;
-    font-weight: 600;    
-}
-
-.skills-box:hover {
-    background: #5c5c8a;
-    color: #fff;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    transition: 1s;
-}
-
-.skills-box p:hover {
-    color: #fff;
-}
-
-.skills-box p a:hover {
-    color: #fff;
-    text-shadow: 3px 3px 4px rgba(251,79,20,0.9);
-    transition: 0.5s;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(251,79,20,0.8);
+    border-color: transparent;    
 }
 
 .dev-list_link:hover {
     text-decoration: none;
     color: #fff;
+    border-color: rgba(255,126,0,0.6);
     text-shadow: 3px 3px 6px rgba(251,79,20,0.8);
     transition: 0.5s;
 }
@@ -475,7 +494,16 @@ body {
     color: coral;
 }
 
-.skills-bar .fa-brands, .fa-solid {
+.skills-bar p a:hover {
+    color: #fff;
+    text-shadow: 3px 3px 4px rgba(251,79,20,0.9);
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+.skills-bar,
+.fa-brands,
+.fa-solid {
     margin-left: 10px;
     margin-right: 5px;
     font-size: 22px;
@@ -496,6 +524,14 @@ body {
     background: coral !important;
 }
 
+@media (max-width: 1180px) {
+    .skills-box ul li {
+        font-size: 14px;
+        margin-bottom: 0px;
+        line-height: 1.6;
+    }
+}
+
 @media (max-width: 914px) {
     .skills-box {
         font-size: 14px;
@@ -506,6 +542,7 @@ body {
     .skills-box ul li {
         font-size: 12px;
         margin-bottom: 0px;
+        line-height: 1.3;
     }
     .skills-box ul li .fa {
         font-size: 16px;
@@ -533,6 +570,7 @@ body {
     .skills-box ul li {
         font-size: 14px;
         margin-bottom: 4px;
+        line-height: 1.5;
     }
     .skills-box ul li .fa {
         font-size: 20px;
