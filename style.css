@@ -10,7 +10,7 @@ body {
 
 #header {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0, 0, 0, 0.2)), url(images/img-bg-main.jpeg);
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(images/img-bg-main.jpeg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -26,14 +26,14 @@ body {
 .user-box img {
     border-radius: 50%;
     width: 275px;
-    border: 4px outset rgba(128, 191, 255, 0.7);
+    border: 4px outset rgba(128,191,255,0.7);
 }   
 
 .user-box h1 {
     color: #e0ebeb;
     font-size: 50px;
     font-weight: bold;
-    -webkit-text-stroke: 0.4px rgba(51, 255, 153, 0.5);    
+    -webkit-text-stroke: 0.4px rgba(51,255,153,0.5);    
 }
 
 .user-box p {
@@ -92,30 +92,9 @@ body {
     100%{transform: translateY(10px);}
 }
 
-/* @media (max-width: 844px){
-    .user-box img {
-        width: 200px;
-    } 
-    .user-box h1{
-        font-size: 30px;
-    }
-    .user-box p {
-        font-size: 18px;
-    }
-    .scroll-btn {
-        padding: 5px 5px 10px;
-        border-radius: 10px;
-        bottom: 10px;
-    }
-    .click-btn {
-        display: none;
-    }
- } */
-
-@media (max-width: 500px){
+@media (max-width: 800px){
     .user-box h1{
         font-size: 36px;
-        -webkit-text-stroke: 0.5px rgba(51, 51, 77, 0.4);
     }
  }
 
@@ -180,7 +159,7 @@ body {
 }
 
 .navbar-brand img {
-    height: 40px;
+    height: 35px;
 }
 
 .nav-bar .fa-bars {
@@ -201,10 +180,12 @@ body {
     text-align: center;
     font-size: 16px;
     font-weight: 600;
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     margin-right: 5px;
     color: #fff !important;
-    transition: transform 0.5s;
+    border-radius: 15px;
+    border:1px solid transparent;
+    transition: transform 0.6s;
 }
 
 .nav-link:hover {
@@ -213,8 +194,8 @@ body {
     color: #cc99ff !important;
     text-decoration: underline;
     transform: translateY(-4px);
-    text-shadow:3px -3px 6px rgba(255, 255, 255, 0.5);
-    box-shadow: -2px 2px 6px rgba(204, 153, 255, 0.5);
+    text-shadow: 2px 2px 6px rgba(255,255,255,0.5);
+    box-shadow: 0px 0px 10px rgba(204,153,255,0.5);
 }
 
 .col-md-6-box{
@@ -403,7 +384,7 @@ body {
     background: #d1d1e0;
     padding: 10px;
     margin-top: 20px;
-    height: 320px;
+    height: 350px;
     border: 1px solid #dda0dd;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -413,13 +394,13 @@ body {
 .skills-box:hover {
     background: #5c5c8a;
     color: #fff;
-    border: 1px solid #d8bfd8;
-    box-shadow: 7px 7px 10px rgba(134, 134, 172,0.9);
     border-top-right-radius: 0;
     border-bottom-left-radius: 0;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    transition: 1s;
+    border: 1px solid #d8bfd8;
+    box-shadow: 5px 5px 9px rgba(134, 45, 134, 0.8);
+    transition: 0.5s all ease-in-out;
 }
 
 .skills-box .fa {
@@ -468,13 +449,13 @@ body {
 }
 
 .dev-list {
-    width: 200px;
-    margin-top: 20px;
-    margin-left: 45px;
+    width: max-content;
+    margin-top: 20px !important;
+    margin: auto;
 }
 
 .dev-list_link {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     display: inline-block;
     text-decoration: none;
     color: coral;
@@ -492,8 +473,7 @@ body {
 }
 
 .skills-bar {
-    width: 80%;
-    margin: 0 auto;
+    padding: 0 30px;
     margin-top: 20px;
 }
 
@@ -521,7 +501,7 @@ body {
 .fa-solid {
     margin-left: 10px;
     margin-right: 5px;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .progress {
@@ -566,7 +546,6 @@ body {
         margin-left: 0px;
     }
     .skills-bar {
-        margin: 0 5%;
         margin-top: 0px;
     }
 }
@@ -577,10 +556,16 @@ body {
         -webkit-text-stroke: unset;
        }
     .dev-list {
-        margin-left: 50px;
+        margin: auto;
+    }
+    .skills-box {
+        padding: 10px 25px;
     }
     .skills-box span {
         font-size: 16px;
+    }
+    .skills-box ul {
+        width: 100%;
     }
     .skills-box ul li {
         font-size: 14px;
@@ -591,7 +576,6 @@ body {
         font-size: 20px;
     }
     .skills-bar {
-        margin: 0 10%;
         margin-top: 20px;
     }
 }
@@ -690,7 +674,7 @@ body {
     transform: translateY(-50%);
     position: sticky;
     z-index: 1;
-    width: 80px;
+    width: 60px;
 }
 
 .social-icons ul {
@@ -712,7 +696,7 @@ body {
 
 .social-icons ul li:hover {
     padding-left: 30px;
-    width: 80px;
+    width: 60px;
     transition: 1s;
 }
 
