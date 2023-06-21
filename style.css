@@ -6,11 +6,13 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* -------Header CSS------------- */
+/*-----Header-----*/
 
 #header {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(images/img-bg-main.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.2),
+                                rgba(0, 0, 0, 0.2)),
+                                url(images/img-bg-main.jpeg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -26,14 +28,14 @@ body {
 .user-box img {
     border-radius: 50%;
     width: 275px;
-    border: 4px outset rgba(128,191,255,0.7);
+    border: 4px outset rgba(128, 191, 255, 0.7);
 }   
 
 .user-box h1 {
     color: #e0ebeb;
     font-size: 50px;
     font-weight: bold;
-    -webkit-text-stroke: 0.4px rgba(51,255,153,0.5);    
+    -webkit-text-stroke: 0.4px rgba(51, 255, 153, 0.5);    
 }
 
 .user-box p {
@@ -63,8 +65,7 @@ body {
     bottom: 80px;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    
+    transform: translateX(-50%);   
 }
 
 .scroll-btn {
@@ -98,55 +99,7 @@ body {
     }
  }
 
-/* -----------------About----------------------- */
-
-.about {
-    padding: 100px 0;
-    margin-bottom: -130px;
-    background-color: #e0ebeb;
-}
-
-.about-title {
-    font-family: 'Space Mono', sans-serif;
-    font-weight: 700;
-    margin-left: 40px;
-    text-shadow: 2px 2px 4px rgba(50,23,77,0.4);
-}
-
-.about-text {
-    font-family: 'Roboto', sans-serif;
-    margin-top: 10px;
-    margin-left: 20px;
-    text-align: justify;
-    border-radius: 10px;
-    background-color: #d1d1e0;
-    padding: 15px;
-    box-shadow: 4px 4px 8px rgba(134, 134, 172,0.5);
-}
- 
-.about-text:hover {
-    background-color: #5c5c8a;
-    color: #fff;
-    box-shadow: 5px 5px 9px rgba(134, 45, 134, 0.8);
-    transition: 0.5s all ease-in-out;
-}
-
-.about-text span {
-    padding-left: 20px;
-}
-
-.logo {
-    border: 3px outset #cc99ff;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-shadow: 5px 5px 8px rgba(134, 45, 134, 0.6);
-    transition: transform 0.3s;
-}
-
-.logo:hover {
-    box-shadow: -5px 5px 8px rgba(173, 235, 235, 0.8);
-    transform: translateY(-2px);
-}
+/*-----Navbar-----*/
 
 .nav-bar {
     top: 0;
@@ -155,7 +108,9 @@ body {
 }
 
 .navbar {
-    background: linear-gradient(to right,rgba(92, 92, 138, 0.8), rgba(41, 41, 61, 1));
+    background: linear-gradient(to right,
+                                rgba(92, 92, 138, 0.8),
+                                rgba(41, 41, 61, 1));
 }
 
 .navbar-brand img {
@@ -198,18 +153,68 @@ body {
     box-shadow: 0px 0px 10px rgba(204,153,255,0.5);
 }
 
+/*-----About-----*/
+
+.about {
+    padding: 100px 0;
+    margin-bottom: -130px;
+    background-color: #e0ebeb;
+}
+
+.about-title {
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 700;
+    margin-left: 40px;
+    text-shadow: 2px 2px 4px rgba(50, 23, 77, 0.4);
+}
+
+.about-text {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: justify;
+    border-radius: 10px;
+    background-color: #d1d1e0;
+    padding: 15px;
+    box-shadow: 4px 4px 8px rgba(134, 134, 172, 0.5);
+}
+ 
+.about-text:hover {
+    background-color: #5c5c8a;
+    color: #fff;
+    box-shadow: 5px 5px 9px rgba(134, 45, 134, 0.8);
+    transition: 0.5s all ease-in-out;
+}
+
+.about-text span {
+    padding-left: 20px;
+}
+
+.logo {
+    border: 3px outset #cc99ff;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(134, 45, 134, 0.6);
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    box-shadow: -5px 5px 8px rgba(173, 235, 235, 0.8);
+    transform: translateY(-2px);
+}
+
 .col-md-6-box{
     margin: 7% 0%;
     padding: 0;
     overflow: hidden;
-    border-bottom-right-radius: 7vw;
-    border-top-left-radius: 7vw;
+    border-bottom-right-radius: 7rem;
+    border-top-left-radius: 7rem;
     border: 4px #6699cc inset;
-    box-shadow: 5px 5px 9px rgba(134, 134, 172,0.5);
+    box-shadow: 5px 5px 9px rgba(134, 134, 172, 0.5);
 }
 
 .col-md-6-box:hover {
-    box-shadow: 8px 8px 12px rgba(119,139,165,0.8);
+    box-shadow: 8px 8px 12px rgba(119, 139, 165, 0.8);
     transition: 0.5s all ease-in-out;
 }
 
@@ -229,7 +234,7 @@ body {
     filter: grayscale(0);
 }
 
-/* --------------------CV/Resume------------------------- */
+/* -----CV/Resume----- */
 
 .resume {
     margin-top: -30px;
@@ -242,7 +247,7 @@ body {
     font-family: 'Space Mono', 'Roboto';
     font-weight: 600;
     margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(50,23,77,0.4);
+    text-shadow: 2px 2px 4px rgba(50, 23, 77, 0.4);
 }
 
 .col-md-6-edu {
@@ -317,10 +322,10 @@ body {
     margin: 11% 5%;
     padding: 0;
     overflow: hidden;
-    border-bottom-right-radius: 7vw;
-    border-top-left-radius: 7vw;
+    border-bottom-right-radius: 7rem;
+    border-top-left-radius: 7rem;
     border: 4px #666699 inset;
-    box-shadow: 0 12px 10px rgba(134, 134, 172,0.6);
+    box-shadow: 0 12px 10px rgba(134, 134, 172, 0.6);
 }
 
 .img-job {
@@ -333,17 +338,17 @@ body {
     margin: 20% 5%;
     padding: 0;
     overflow: hidden;
-    border-bottom-right-radius: 7vw;
-    border-top-left-radius: 7vw;
+    border-bottom-right-radius: 7rem;
+    border-top-left-radius: 7rem;
     border: 4px #666699 inset;
-    box-shadow: 0 12px 10px rgba(134, 134, 172,0.6);
+    box-shadow: 0 12px 10px rgba(134, 134, 172, 0.6);
 }
 
 .col-md-6-box-edu:hover,
 .col-md-6-box-job:hover{
-    box-shadow: 0 12px 10px rgba(134, 134, 172,0.95);
-    border-top-right-radius: 7vw;
-    border-bottom-left-radius: 7vw;
+    box-shadow: 0 12px 10px rgba(134, 134, 172, 0.85);
+    border-top-right-radius: 7rem;
+    border-bottom-left-radius: 7rem;
     border-top-left-radius: 0;
     border-bottom-right-radius: 0;
     transition:0.6s;
@@ -365,7 +370,7 @@ body {
     filter: grayscale(0);
 }
 
-/* ------------------Skills-------------------------- */
+/*-----Skills-----*/
 
 .skills {
     padding-top: 50px;
@@ -377,7 +382,7 @@ body {
     font-family: 'Space Mono', 'Roboto';
     font-weight: 600;
     margin-bottom: 5px;
-    text-shadow: 2px 2px 4px rgba(50,23,77,0.4);
+    text-shadow: 2px 2px 4px rgba(50, 23, 77, 0.4);
 }
 
 .skills-box {
@@ -388,7 +393,7 @@ body {
     border: 1px solid #dda0dd;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
-    box-shadow: 4px 4px 6px rgba(134, 134, 172,0.6);
+    box-shadow: 4px 4px 6px rgba(134, 134, 172, 0.6);
 }
 
 .skills-box:hover {
@@ -460,15 +465,15 @@ body {
     text-decoration: none;
     color: coral;
     font-weight: 600;
-    border-bottom: 1px solid rgba(251,79,20,0.8);
+    border-bottom: 1px solid rgba(251, 79, 20, 0.8);
     border-color: transparent;    
 }
 
 .dev-list_link:hover {
     text-decoration: none;
     color: #fff;
-    border-color: rgba(255,126,0,0.6);
-    text-shadow: 3px 3px 6px rgba(251,79,20,0.8);
+    border-color: rgba(255, 126, 0, 0.6);
+    text-shadow: 3px 3px 6px rgba(251, 79, 20, 0.8);
     transition: 0.5s;
 }
 
@@ -491,7 +496,7 @@ body {
 
 .skills-bar p a:hover {
     color: #fff;
-    text-shadow: 3px 3px 4px rgba(251,79,20,0.9);
+    text-shadow: 3px 3px 4px rgba(251, 79, 20, 0.9);
     transition: 0.5s;
     text-decoration: underline;
 }
@@ -580,11 +585,14 @@ body {
     }
 }
 
-/* -----------------------Contact---------------------------- */
+/*-----Contact-----*/
 
 .contact {
     padding: 50px;
-    background: linear-gradient(rgba(31, 31, 46,0.3),rgba(31, 31, 46, 0.4)), url(images/img-bg-cont.jpeg);
+    background: linear-gradient(
+                                rgba(31, 31, 46,0.3),
+                                rgba(31, 31, 46, 0.4)),
+                                url(images/img-bg-cont.jpeg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -640,7 +648,9 @@ body {
 }
 
 .footer {
-    background: linear-gradient(to right,rgba(92, 92, 138, 0.7), rgba(41, 41, 61, 0.9));
+    background: linear-gradient(to right,
+                              rgba(79, 79, 153, 0.7),
+                              rgba(41, 41, 61, 0.9));
     height: 50px;
     color: #fff;
     padding-top: 15px;
@@ -667,7 +677,7 @@ body {
     text-shadow: -2px -2px 4px rgba(204, 204, 204, 0.5);
 } 
 
-/* -----------Social Icons------------------ */
+/*-----Social Icons-----*/
 
 .social-icons {
     top: 50%;
