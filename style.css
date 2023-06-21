@@ -32,22 +32,22 @@ body {
 }   
 
 .user-box h1 {
-    color: #e0ebeb;
+    color: #8fbc8f ;
     font-size: 50px;
     font-weight: bold;
-    -webkit-text-stroke: 0.4px rgba(51, 255, 153, 0.5);    
+    -webkit-text-stroke: 1px rgba(125,249,255, 0.65);    
 }
 
 .user-box p {
     font-size: 25px;
     font-weight: bold;
-    background-image: linear-gradient(#ccffcc, #ccffcc);
+    background-image: linear-gradient(#7fffd4, #00ffff);
     background-repeat: no-repeat;
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     background-position: -300px 0;
-    animation: bcolor 3s linear infinite alternate;
+    animation: bcolor 3s linear 1s infinite alternate;
     margin-top: 10px;
 }
 
