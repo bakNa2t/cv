@@ -47,7 +47,7 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     background-position: -300px 0;
-    animation: bcolor 3s linear 1s infinite alternate;
+    animation: bcolor 3s linear infinite alternate;
     margin-top: 10px;
 }
 
@@ -84,9 +84,9 @@ body {
     border-radius: 30px;
 }
 
-.scroll-bar {
+/* .scroll-bar  {
     animation: mover 1s infinite alternate;
-}
+} */
 
 @keyframes mover {
     0%{transform: translateY(0);}
@@ -203,8 +203,8 @@ body {
     transform: translateY(-2px);
 }
 
-.col-md-6-box{
-    margin: 7% 0%;
+.col-md-6-box {
+    margin: 8% 0%;
     padding: 0;
     overflow: hidden;
     border-bottom-right-radius: 7rem;
@@ -318,7 +318,7 @@ body {
     margin-left: 1.5rem;
 }
 
-.col-md-6-box-job{
+.col-md-6-box-job {
     margin: 11% 5%;
     padding: 0;
     overflow: hidden;
@@ -556,12 +556,38 @@ body {
 }
 
 @media (max-width: 430px) {
-    .user-box h1{
+    .user-box h1 {
         font-size: 36px;
-        -webkit-text-stroke: unset;
-       }
+        -webkit-text-stroke: 0.6px rgba(125,249,255, 0.75);
+    }
+    .about-text {
+        margin: 0 10px;
+    }
+    .col-md-6-box {
+        border-bottom-right-radius: 4rem;
+        border-top-left-radius: 4rem;
+    }
+    .col-md-6-box-job,
+    .col-md-6-box-edu {
+        border-bottom-right-radius: 4rem;
+        border-top-left-radius: 4rem;
+    }
+    .col-md-6-box-edu{
+        margin: 0 5%;
+    }
+    .col-md-6-box-edu:hover,
+    .col-md-6-box-job:hover {
+        border-top-right-radius: 4rem;
+        border-bottom-left-radius: 4rem; 
+    }
+    .skills {
+        padding-top: 0px;
+    }
     .dev-list {
         margin: auto;
+    }
+    .col-md-4 {
+        padding: 0 35px;
     }
     .skills-box {
         padding: 10px 25px;
@@ -692,21 +718,23 @@ body {
 }
 
 .social-icons ul li {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     list-style-type: none;
-    padding-left: 10px;
-    padding-top: 10px;
+    padding-left: 7px;
+    padding-top: 5px;
     margin-top: 5px;
     color: #fff;
     background: #33334d;
+    opacity: 0.5;
 }
 
 .social-icons ul li:hover {
     padding-left: 30px;
     width: 60px;
+    opacity: 1;
     transition: 1s;
 }
 
