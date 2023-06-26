@@ -561,6 +561,9 @@ body {
         -webkit-text-stroke: unset;
         text-shadow: 0 0 10px rgba(0,0,54, 0.8);
     }
+    .about {
+        padding: 30px 0 35px 0;
+    }
     .about-text {
         margin: 0 10px;
     }
