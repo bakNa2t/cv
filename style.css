@@ -56,10 +56,10 @@ body {
 
 @keyframes bcolor {
     100% {
-        background-position: 0px 0;
+        background-position: 0px 0px;
     }
     0% {
-        background-position: -350px 0;
+        background-position: -350px 0px;
     }
 }
 
@@ -81,20 +81,30 @@ body {
     border-radius: 30px;
 }
 
+.scroll-btn:hover,
+.scroll-bar span:hover {
+    box-shadow: 0 0 12px #7fffd4;
+    border-color: #7fffd4;
+}
+
 .scroll-bar span {
     border: 2px solid  #fff;
     font-size: 10px;
     border-radius: 30px;
 }
 
-/* .scroll-bar  {
-    animation: mover 1s infinite alternate;
-} */
-
-@keyframes mover {
-    0%{transform: translateY(0);}
-    100%{transform: translateY(10px);}
+.scroll-bar  {
+    animation: mover 1s linear infinite alternate;
 }
+
+/* @keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+} */
 
 /* @media (max-width: 800px){
     .user-box h1{
@@ -142,18 +152,18 @@ body {
     margin-right: 5px;
     color: #fff !important;
     border-radius: 15px;
-    border:1px solid transparent;
-    transition: transform 0.6s;
+    border: 2px solid transparent;
+    transition: transform 0.4s ease-in-out;
 }
 
 .nav-link:hover {
-    border:1px solid #cc99ff;
+    border: 2px solid #cc99ff;
     border-radius: 15px;
     color: #cc99ff !important;
     text-decoration: underline;
     transform: translateY(-4px);
-    text-shadow: 2px 2px 6px rgba(255,255,255,0.5);
-    box-shadow: 0px 0px 10px rgba(204,153,255,0.5);
+    text-shadow: 2px 2px 6px rgba(26, 255, 255,0.5);
+    box-shadow: 0px 0px 10px rgba(179, 255, 255, 0.65);
 }
 
 /*-----About-----*/
@@ -208,7 +218,7 @@ body {
 }
 
 .logo:hover {
-    box-shadow: -5px 5px 8px rgba(173, 235, 235, 0.8);
+    box-shadow: 0 0 18px rgba(173, 235, 235, 0.8);
     transform: translateY(-2px);
 }
 
@@ -218,7 +228,7 @@ body {
     overflow: hidden;
     border-bottom-right-radius: 7rem;
     border-top-left-radius: 7rem;
-    border: 4px #6699cc inset;
+    border: 4px outset #6699cc;
     box-shadow: 5px 5px 9px rgba(134, 134, 172, 0.5);
     transition: 0.5s all ease-in-out;
 }
@@ -230,7 +240,7 @@ body {
 .profile-img {
     width: 100%;
     height: 100%;
-    transition: 0.5s all ease-in-out;
+    transition: 0.4s all ease-in;
     filter: grayscale(100%);
 }
 
@@ -238,8 +248,8 @@ body {
     /* -ms-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2); */
+    -o-transform: scale(1.2); */
+    /* transform: scale(1.1); */
     filter: grayscale(0);
 }
 
@@ -341,13 +351,15 @@ body {
     border-bottom-right-radius: 7rem;
     border-top-left-radius: 7rem;
     border: 4px #666699 inset;
-    box-shadow: 0 12px 10px rgba(134, 134, 172, 0.6);
+    box-shadow: 3px 3px 10px rgba(134, 134, 172, 0.8);
     transition: 0.5s all ease-in-out;
 }
 
-.img-job {
+.img-job,
+.img-edu {
     width: 100%;
     filter: grayscale(100%);
+    transition: 0.5s all ease-in-out;
 }
 
 .col-md-6-box-edu {
@@ -357,18 +369,13 @@ body {
     border-bottom-right-radius: 7rem;
     border-top-left-radius: 7rem;
     border: 4px #666699 inset;
-    box-shadow: 0 12px 10px rgba(134, 134, 172, 0.6);
+    box-shadow: 0 0 10px rgba(134, 134, 172, 0.6);
     transition: 0.5s all ease-in-out;
-}
-
-.img-edu{
-    width: 100%;
-    filter: grayscale(100%);
 }
 
 .col-md-6-box-edu:hover,
 .col-md-6-box-job:hover{
-    box-shadow: 0 12px 10px rgba(134, 134, 172, 0.85);
+    box-shadow: -3px -3px 15px rgba(102,102,153, 1);
     border-top-right-radius: 7rem;
     border-bottom-left-radius: 7rem;
     border-top-left-radius: 0;
@@ -380,8 +387,8 @@ body {
     /* -ms-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1); */
+    -o-transform: scale(1.1); */
+    /* transform: scale(1.1); */
     filter: grayscale(0);
 }
 
@@ -489,7 +496,7 @@ body {
     text-decoration: none;
     color: #fff;
     border-color: rgba(255, 126, 0, 0.6);
-    text-shadow: 3px 3px 6px rgba(251, 79, 20, 0.8);
+    text-shadow: 1px 1px 10px rgba(251, 79, 20, 0.8);
 }
 
 .skills-bar {
@@ -669,7 +676,7 @@ body {
 
 .download-link:hover {
     text-decoration: none;
-    color: #cc99ff;
+    color: #cff;;
     text-shadow: -2px -2px 4px rgba(204, 204, 204, 0.5)
 }
 
@@ -690,6 +697,8 @@ body {
     border: 2px solid #cc99ff !important;
     background: rgba(92, 92, 138, 0.8) !important;
     color: #cc99ff;
+    box-shadow:  0 0 10px #cff;;
+    /* box-shadow:  0 0 15px rgba(240,255,240, 0.65); */
 }
 
 .contact .btn .fa {
@@ -722,11 +731,11 @@ body {
 
 .contact .container .row .col-md-4 a:hover {
     text-decoration: underline;
-    color: #cc99ff;
-    text-shadow: -2px -2px 4px rgba(204, 204, 204, 0.5);
+    color: #cff;
+    text-shadow: 0 0 10px #bf00ff ;
 } 
 
-/*-----Social Icons-----*/
+/*-----Social Icons-----*/  
 
 .social-icons {
     top: 50%;
@@ -752,7 +761,7 @@ body {
     color: #fff;
     background: #33334d;
     opacity: 0.5;
-    transition: 1s;
+    transition: 1s all ease-in-out;
 }
 
 .social-icons ul li:hover {
